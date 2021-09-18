@@ -37,7 +37,7 @@ export default class Home extends Component {
   style={styles.Image} 
   
 />
-<Text style={{marginLeft: '12%'}} >profile pic</Text>
+<Text style={{marginLeft: '20%'}} >Profile Pic</Text>
 <View style={styles.textContainer}>
 <Text style={styles.text} >{'NAME = ' + this.state.name}</Text>
 <Text style={styles.text} >{'PLACE = ' + this.state.place}</Text>
@@ -55,42 +55,42 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
     justifyContent: 'center',
-    alignCItems: 'center',
+    alignItems: 'center',
     marginBottom: 30,
   },
   button: {
     backgroundColor: 'grey',
     justifyContent: 'center',
-    alignItem: 'center',
+    alignItems: 'center',
     width: 150,
     height: 50,
     padding: 10,
-    marginTop: 50,
-    marginLeft: '80%',
+    marginTop: 30,
+    marginLeft: '60%',
   borderRadius: 40 ,
 
   },
   buttontext: {
     justifyContent: 'center',
-    alignItem: 'center',
+    alignItems: 'center',
     textAlign: 'center'
   },
   Image:{
     justifyContent: 'center',
-    alignItem: 'center',
+    alignItems: 'center',
     width: 200,
     height: 200,
-    marginTop: 30,
-    marginLeft: 100,
+    marginTop: 10,
+    marginLeft: 10,
     borderRadius: 150 ,
   },
   text:{
-    fontSize: 30,
+    fontSize: 20,
     color: 'black',
     fontWeight: 'bold'
   },
   textContainer: {
-     marginLeft: '30%',
-     marginTop: '-10%',
+     marginLeft: '10%',
+     marginTop: '10%',
   },
 });
