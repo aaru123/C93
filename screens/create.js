@@ -52,27 +52,29 @@ export default class Create extends Component {
 
           <Header containerStyle={{ backgroundColor: 'black', height: 70, }}
             centerComponent={{ text: 'CREATE', style: { color: '#fff', fontSize: 30, fontWeight: 'bold' } }}
-            rightComponent={{ icon: 'add-circle', color: '#fff' }}
+            rightComponent={{ icon: 'add-circle', color: '#fff', style:{marginTop: 10} }}
           />
 
 
 
-          <View>
+           <View>
 
             <View>
-            <Image source={require('../assets/6.jpeg')}/>
-              <TextInput
+            <Image source={require("../assets/6.jpeg")} 
+            style={styles.Image}/>
+            
+               <TextInput
                 placeholder="Name Of The Toy"
                 style={styles.name}
                 onChangeText={Name => { this.setState({ Name: Name }) }}
               />
 
 
-              <Text>{this.state.Name}</Text>
+              <Text>{this.state.Name}</Text> 
 
             </View>
 
-
+{/*
 
             <View style={styles.featureButton}>
 
@@ -147,9 +149,9 @@ export default class Create extends Component {
               <Text>SAVE</Text>
             </TouchableOpacity>
 
+*/}
 
-
-          </View>
+          </View> 
 
         </View>
 
@@ -167,16 +169,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   name: {
-    marginTop: '3%',
-    width: '10%',
-    marginLeft: '45%',
-    height: '30%',
-    borderWidth: 2
+    marginTop: 0,
+    width: '40%',
+     marginLeft: '50%',
+    // height: '30%',
+     borderWidth: 1,
+
   },
   button2: {
     backgroundColor: 'grey',
     justifyContent: 'center',
-    alignItem: 'center',
+    alignItems:'center',
     width: 80,
     height: 50,
     padding: 10,
@@ -189,7 +192,7 @@ const styles = StyleSheet.create({
   button1: {
     backgroundColor: 'grey',
     justifyContent: 'center',
-    alignItem: 'center',
+    alignItems: 'center',
     width: 60,
     height: 50,
     padding: 10,
@@ -243,6 +246,15 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
+  Image:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 200,
+    height: 200,
+    marginTop: 10,
+    marginLeft: 10,
+    borderRadius: 150 ,
+  },
 
 });
